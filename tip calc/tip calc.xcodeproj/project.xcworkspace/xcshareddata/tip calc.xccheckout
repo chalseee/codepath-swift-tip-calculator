@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>628B5D45-E35B-4AB8-B225-09C6D77C50AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0D119E7A0D8836A3589B578AE9ACDDE1D7B6C99B</key>
+		<string>https://github.com/chalseoko/codepath_tip_calculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tip calc/tip calc.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0D119E7A0D8836A3589B578AE9ACDDE1D7B6C99B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chalseoko/codepath_tip_calculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0D119E7A0D8836A3589B578AE9ACDDE1D7B6C99B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0D119E7A0D8836A3589B578AE9ACDDE1D7B6C99B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>codepath_tip_calculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
