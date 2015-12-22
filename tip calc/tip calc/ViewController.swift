@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        billField.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,18 +31,17 @@ class ViewController: UIViewController {
 
 
     @IBAction func onEditingChanged(sender: AnyObject) {
-        var tipPercentages = [0.18, 0.2, 0.22]
+        var tipPercentages = [0.18, 0.20, 0.22]
         var selectedPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        var billAmount = (billField.text as NSString).doubleValue
+        var tmpBill = billField.text
+        var billAmount = (tmpBill! as NSString).doubleValue
+        
         var tip = billAmount * selectedPercentage
         var total = billAmount + tip
         
-        tipLabel.text = "$\(tip)"
-        totalLabel.text = "$\(tip)"
-        
-        tipLabel.text = String(format: "%f", tip)
-        tipLabel.text = String(format: "%.2f", tip)
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
     }
     
     @IBAction func onTap(sender: AnyObject) {
