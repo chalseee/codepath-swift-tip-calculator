@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -64,7 +63,10 @@
                                         <rect key="frame" x="55" y="74" width="137" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ca1-wq-Dv7"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,14 +80,24 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zgG-bF-gzf" appends="YES" id="GYb-Wb-4jL"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="billField" destination="bkK-wq-zEr" id="1Mf-jJ-NiM"/>
-                        <outlet property="tipLabel" destination="kh9-bI-dsS" id="xla-0V-b4i"/>
-                        <outlet property="totalLabel" destination="47A-fa-1Jw" id="0SY-mz-cBm"/>
+                        <outlet property="billField" destination="bkK-wq-zEr" id="Hua-uv-gg2"/>
+                        <outlet property="tipControl" destination="ML8-4g-HQ3" id="8Z1-On-sIs"/>
+                        <outlet property="tipLabel" destination="pZj-Ll-jhP" id="UBE-Ey-b5q"/>
+                        <outlet property="totalLabel" destination="47A-fa-1Jw" id="01Q-eR-qpu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zgG-bF-gzf">
+                    <connections>
+                        <action selector="onTap:" destination="vXZ-lx-hvc" id="DXO-x6-eTe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="304" y="337"/>
         </scene>
