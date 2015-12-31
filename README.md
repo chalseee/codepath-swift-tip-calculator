@@ -1,4 +1,4 @@
-# Pre-work - *Name of App Here*
+# Pre-work - tip calc
 
 tip calc is a tip calculator application for iOS.
 
@@ -33,6 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+I didn't have access to a mac over winter break, so I had to finish the app at UM before heading home and wasn't able to further complete any additional features.
 
 ## License
 
